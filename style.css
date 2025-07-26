@@ -1,0 +1,511 @@
+:root {
+  --lakme-pink: #d63384;
+  --white: #ffffff;
+}
+
+/* Reset */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--white);
+  color: #d63384;
+  margin: 0;
+  padding: 0;
+}
+h4
+{
+  color:white;
+}
+
+/* 🔮 General Text Color */
+.text-purple {
+  color: #d63384; /* Lakme Pink */
+}
+
+/* 🌸 Carousel Themed in PaleVioletRed */
+/* 🎠 Carousel Container */
+#softwareCarousel {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌸 Caption Background and Text */
+#softwareCarousel .carousel-caption {
+  background-color: rgba(214, 51, 132, 0.85); /* Strong pink with transparency */
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+/* 🌟 Heading inside caption */
+#softwareCarousel .carousel-caption h5 {
+  color: var(--lakme-pink);
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+h5
+{
+  color: #d63384;
+}
+
+/* ✨ Paragraph inside caption */
+#softwareCarousel .carousel-caption p {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* 🖼️ Image Styling */
+#softwareCarousel .carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+
+/* ◀ ▶ Carousel Arrow Controls */
+#softwareCarousel .carousel-control-prev-icon,
+#softwareCarousel .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  #softwareCarousel .carousel-inner img {
+    height: 250px;
+  }
+
+  #softwareCarousel .carousel-caption {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+}
+/* Responsive Tweak */
+@media (max-width: 768px) {
+  #softwareCarousel .carousel-inner img {
+    height: 250px;
+  }
+
+  #softwareCarousel .carousel-caption {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+p
+{
+  color: black;
+}
+
+/* 🧾 Form Styling */
+.form-box {
+  background-color: #fff;
+  border-left: 6px solid #e75480;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-box:hover {
+  box-shadow: 0 8px 20px rgba(231, 84, 128, 0.2);
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-control {
+  border: 2px solid #e75480;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ff66a3;
+  box-shadow: 0 0 5px rgba(231, 84, 128, 0.5);
+}
+
+/* 📩 Submit Button */
+.btn-purple {
+  background-color: #e75480;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-purple:hover {
+  background-color: #ff66a3;
+  transform: translateY(-2px);
+}
+
+/* 🏢 Contact Info Box */
+.contact-box {
+  border-left: 6px solid #e75480;
+  background-color: #fff;
+  color: #444;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+  box-shadow: 0 8px 20px rgba(231, 84, 128, 0.2);
+}
+
+.contact-box p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* 🌐 Social Icons */
+.social-icon {
+  color: #e75480;
+  font-size: 26px;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ff66a3;
+  transform: scale(1.2);
+}
+
+
+/* HEADER */
+.custom-header {
+  background-color: var(--lakme-pink);
+  color: var(--white);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.custom-header .nav-link {
+  color: var(--white);
+  font-weight: 600;
+  margin-left: 1rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+.custom-header .nav-link:hover {
+  color: #ffd6eb;
+  text-decoration: underline;
+}
+.logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+/* FOOTER */
+.custom-footer {
+  background-color: var(--lakme-pink);
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+.footer-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: #ffd6eb;
+}
+
+/* SOCIAL ICONS */
+.social-icon {
+  color: white; /* Lakme Pink */
+  font-size: 28px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color:white; /* Brighter pink on hover */
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .custom-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-link {
+    margin: 0.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .tech-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+.enquiry-section {
+  background-color: #fff;
+}
+
+.text-pink {
+  color: #d63384; /* Lakmé pink */
+}
+
+.text-darkpink {
+  color: #b61a65;
+}
+
+.btn-pink {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.btn-pink:hover {
+  background-color: #b61a65;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #d63384;
+}
+
+.form-control:focus {
+  border-color: #b61a65;
+  box-shadow: 0 0 5px rgba(182, 26, 101, 0.5);
+}
+.achievements-section {
+  background-color: #fff0f5;
+}
+.about-company-section
+{
+  background: #fff;
+  border-radius: 12px;
+  border-left: 6px solid #e75480;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.1);
+  transition: transform 0.3s ease;
+  padding-top: 20px;
+}
+
+.text-pink {
+  color: #d63384;
+}
+
+.achievement-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.1);
+  transition: transform 0.3s ease;
+  border-left: 6px solid #e75480;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(214, 51, 132, 0.2);
+}
+
+.achievement-icon {
+  font-size: 40px;
+  color: #d63384;
+}
+.services-section {
+  background: linear-gradient(135deg, #ffe4ed, #ffc4d6);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #ff69b4;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.service-card {
+  background-color: #fff0f6;
+  border: 2px solid #ffb6c1;
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.2);
+  border-left: 6px solid #e75480;
+
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(255, 105, 180, 0.3);
+}
+
+.service-card i {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  color:  #d63384;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #444;
+}
+/* Shared Section Styling */
+.services-section, .achievements-section {
+  background: #fdfdff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Section Titles */
+.section-title, .achievements-section h2 {
+  color:  #d63384;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.why-choose-us {
+  background-color: #fdfaff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.choose-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose-text {
+  flex: 1 1 400px;
+}
+
+.choose-text h2 {
+  color:  #d63384;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.choose-text p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.choose-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.choose-text li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color:  #d63384;
+  background: url('https://cdn-icons-png.flaticon.com/128/845/845646.png') no-repeat left center;
+  background-size: 20px;
+  padding-left: 30px;
+}
+
+.choose-gallery {
+  flex: 1 1 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.choose-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  height: 120px;
+  box-shadow: 0 4px 12px rgba(127, 90, 156, 0.2);
+  transition: transform 0.3s;
+}
+
+.choose-gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Services */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.service-card {
+  background: white;
+  border: 2px solid #e4d5f6;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(127, 90, 156, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 6px solid #e75480;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(127, 90, 156, 0.2);
+}
+
+.service-card i {
+  font-size: 40px;
+  color:  #d63384;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  color:  #d63384;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 15px;
+}
+
+/* Achievements */
+.achievements-section {
+  background: #f5effa;
+  
+}
+
+.achievements-section h2 {
+  color:  #d63384;
+}
+
+.achievements-section p {
+  color:  #d63384;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
